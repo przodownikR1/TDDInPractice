@@ -1,0 +1,63 @@
+spring:
+  profiles:
+    active:
+    - dev
+  cache:
+        cache-names: repoInfo
+        caffeine:
+            spec: maximumSize=500, expireAfterAccess=100s
+  config:
+    location: /config
+    additional-location: file\:./config
+logging:
+  file: gitUserCollector.log
+  level:
+    org.springframework.web: warn
+    root: info
+  pattern:
+    console: '[%thread] %-5level %logger{36} - %msg%n'
+server:
+  port: 9999
+rest-client:
+  maxConnection: 200
+  maxPerRoute: 30
+  retryTimes: 3
+  connTimeout: 15000
+  readTimeout: 15000
+  connWaitTimeout: 15000
+management:
+  metrics:
+    web:
+      client:
+        record-request-percentiles: false
+      server:
+        auto-time-requests: true
+        record-request-percentiles: true
+    export:
+      jmx:
+        enabled: true
+      simple:
+        enabled: true
+    binders:
+      jvm:
+        enabled: true
+      processor:
+        enabled: true
+      logback:
+        enabled: true
+
+  endpoint:
+    mappings:
+      enabled: true
+    info:
+      enabled: true
+    jolokia:
+      enabled: true
+    logfile:
+      enabled: true
+    metrics:
+      enabled: true
+    health:
+      show-details: true
+      enabled: true
+  

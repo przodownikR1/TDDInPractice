@@ -1,0 +1,17 @@
+test {
+    logging.captureStandardOutput(LogLevel.INFO)
+    logging.captureStandardOutput(LogLevel.ERROR)
+    
+    jvmArgs = ['-Dspring.profiles.active=test']
+    minHeapSize = '128m'
+    maxHeapSize = "1024m"
+    testLogging {
+        showCauses true
+        showExceptions true
+        showStackTraces true
+        events 'started', 'passed', 'skipped', 'failed'
+
+    }
+    forkEvery = 5
+    maxParallelForks = Runtime.runtime.availableProcessors() / 2
+}
