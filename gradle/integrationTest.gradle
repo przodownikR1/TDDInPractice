@@ -22,6 +22,13 @@ task integrationTest(type: Test) {
         }
     }
     outputs.upToDateWhen { true }
+    testLogging {
+        showCauses true
+        showExceptions true
+        showStackTraces true
+        events 'started', 'passed', 'skipped', 'failed'
+
+    }
 }
 
 check.dependsOn integrationTest

@@ -3,6 +3,7 @@ package pl.java.scalatech.client;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,6 +28,7 @@ import pl.java.scalatech.dto.RepoInfo;
 
 @RunWith(SpringRunner.class)
 @RestClientTest(GitHubRestClient.class)
+@Ignore
 public class GitHubClientTest {
     @Autowired
     private GitHubRestClient objectUnderTest;

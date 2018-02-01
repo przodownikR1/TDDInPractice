@@ -31,7 +31,7 @@ import static org.springframework.http.HttpHeaders.CONTENT_TYPE;
 import static org.springframework.http.HttpStatus.OK;
 import static org.springframework.http.MediaType.APPLICATION_JSON_UTF8_VALUE;
 import static pl.java.scalatech.TestIntegrationTools.buildUnderTestURL;
-import static pl.java.scalatech.TestTools.javaTimeModule;
+import static pl.java.scalatech.TestIntegrationTools.javaTimeModule;
 
 import pl.java.scalatech.dto.RepoInfo;
 

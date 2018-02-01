@@ -1,13 +1,11 @@
 package pl.java.scalatech;
 
-import org.assertj.core.api.Assertions;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
 import org.springframework.boot.test.web.client.TestRestTemplate;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -29,8 +27,8 @@ public class GitUserInfoCollectorApplicationTests {
     @Test
     public void shouldHealthOk() {
         ResponseEntity<String> resultHealthStatus = restTemplate.getForEntity("/actuator/health", String.class);
-        Assertions.assertThat(resultHealthStatus.getStatusCode()).isEqualTo(OK);
-        Assertions.assertThat(resultHealthStatus.getBody()).
+        assertThat(resultHealthStatus.getStatusCode()).isEqualTo(OK);
+        //TODO rest of assertions
     }
 
 }
