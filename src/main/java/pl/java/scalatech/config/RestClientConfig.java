@@ -20,7 +20,7 @@ import javax.servlet.Filter;
 
 @Configuration
 @RequiredArgsConstructor
-class RestClientConfig {
+public class RestClientConfig {
 
     private final RestClientSetting restClientSetting;
 

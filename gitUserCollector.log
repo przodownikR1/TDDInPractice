@@ -1,0 +1,1119 @@
+2018-02-01 06:57:54.161  INFO 18102 --- [main] p.j.s.GitUserInfoCollectorApplication    : Starting GitUserInfoCollectorApplication on przodownik-All-Series with PID 18102 (/home/przodownik/blog/TDDInPractice/build/classes/java/main started by przodownik in /home/przodownik/blog/TDDInPractice)
+2018-02-01 06:57:54.163  INFO 18102 --- [main] p.j.s.GitUserInfoCollectorApplication    : The following profiles are active: dev
+2018-02-01 06:57:54.205  INFO 18102 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@815b41f: startup date [Thu Feb 01 06:57:54 CET 2018]; root of context hierarchy
+2018-02-01 06:57:55.236  INFO 18102 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$41818734] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 06:57:55.255  INFO 18102 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$35f54bd8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 06:57:55.270  INFO 18102 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBinderBuilder$ConversionServiceFactory' of type [org.springframework.boot.context.properties.ConfigurationPropertiesBinderBuilder$ConversionServiceFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 06:57:55.290  INFO 18102 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 06:57:55.297  INFO 18102 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheManagerCustomizers' of type [org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 06:57:55.299  INFO 18102 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration' of type [org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration$$EnhancerBySpringCGLIB$$d790beb9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 06:57:55.310  INFO 18102 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheManager' of type [org.springframework.cache.concurrent.ConcurrentMapCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 06:57:55.310  INFO 18102 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheAutoConfigurationValidator' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 06:57:55.334  INFO 18102 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'management.metrics-org.springframework.boot.actuate.autoconfigure.metrics.MetricsProperties' of type [org.springframework.boot.actuate.autoconfigure.metrics.MetricsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 06:57:55.338  INFO 18102 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.actuate.autoconfigure.metrics.MeterBindersConfiguration' of type [org.springframework.boot.actuate.autoconfigure.metrics.MeterBindersConfiguration$$EnhancerBySpringCGLIB$$17c21d1b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 06:57:55.379  INFO 18102 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jvmGcMetrics' of type [io.micrometer.core.instrument.binder.jvm.JvmGcMetrics] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 06:57:55.381  INFO 18102 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jvmMemoryMetrics' of type [io.micrometer.core.instrument.binder.jvm.JvmMemoryMetrics] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 06:57:55.382  INFO 18102 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jvmThreadMetrics' of type [io.micrometer.core.instrument.binder.jvm.JvmThreadMetrics] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 06:57:55.385  INFO 18102 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'logbackMetrics' of type [io.micrometer.core.instrument.binder.logging.LogbackMetrics] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 06:57:55.388  INFO 18102 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'uptimeMetrics' of type [io.micrometer.core.instrument.binder.system.UptimeMetrics] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 06:57:55.391  INFO 18102 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'processorMetrics' of type [io.micrometer.core.instrument.binder.system.ProcessorMetrics] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 06:57:55.396  INFO 18102 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.actuate.autoconfigure.metrics.web.client.RestTemplateMetricsConfiguration' of type [org.springframework.boot.actuate.autoconfigure.metrics.web.client.RestTemplateMetricsConfiguration$$EnhancerBySpringCGLIB$$ae2f106f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 06:57:55.408  INFO 18102 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'metricsWebClientUriTagFilter' of type [io.micrometer.core.instrument.config.MeterFilter$8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 06:57:55.645  INFO 18102 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2018-02-01 06:57:55.659  INFO 18102 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-01 06:57:55.660  INFO 18102 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-01 06:57:55.675  INFO 18102 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2018-02-01 06:57:55.749  INFO 18102 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-01 06:57:56.766  INFO 18102 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-01 06:57:56.766  INFO 18102 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-01 06:57:56.767  INFO 18102 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-01 06:57:56.767  INFO 18102 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-01 06:57:56.767  INFO 18102 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'shallowEtagHeaderFilter' to urls: [/repositories/*]
+2018-02-01 06:57:56.767  INFO 18102 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2018-02-01 06:57:56.767  INFO 18102 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-02-01 06:57:56.767  INFO 18102 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-02-01 06:57:56.769  INFO 18102 --- [localhost-startStop-1] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/jolokia' to jolokia-actuator-endpoint
+2018-02-01 06:57:57.261  INFO 18102 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-02-01 06:57:57.262  INFO 18102 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-02-01 06:57:57.262  INFO 18102 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-01 06:57:57.408  INFO 18102 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-02-01 06:57:57.923  INFO 18102 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-01 06:57:57.960  INFO 18102 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-02-01 06:57:57.960  INFO 18102 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-02-01 06:57:57.975  INFO 18102 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-02-01 06:57:57.996  INFO 18102 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-02-01 06:57:58.144  INFO 18102 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2018-02-01 06:57:58.148  INFO 18102 --- [main] p.j.s.GitUserInfoCollectorApplication    : Started GitUserInfoCollectorApplication in 4.322 seconds (JVM running for 4.591)
+2018-02-01 06:57:58.152  INFO 18102 --- [main] p.j.s.GitUserInfoCollectorApplication    : 
+----------------------------------------------------------
+	Application 'null' is running! Access URLs:
+	Local: 		http://127.0.0.1:9999
+	Active Profiles: 127.0.1.1
+----------------------------------------------------------
+2018-02-01 06:58:13.213  INFO 18102 --- [Thread-5] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@815b41f: startup date [Thu Feb 01 06:57:54 CET 2018]; root of context hierarchy
+2018-02-01 06:58:13.230  INFO 18102 --- [Thread-5] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-02-01 06:58:13.233  INFO 18102 --- [Thread-5] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-02-01 06:58:18.443  INFO 18377 --- [Test worker] p.j.s.dto.RepoInfoJsonSerializerTest     : Starting RepoInfoJsonSerializerTest on przodownik-All-Series with PID 18377 (started by przodownik in /home/przodownik/blog/TDDInPractice)
+2018-02-01 06:58:18.444  INFO 18377 --- [Test worker] p.j.s.dto.RepoInfoJsonSerializerTest     : The following profiles are active: test
+2018-02-01 06:58:18.452  INFO 18360 --- [Test worker] p.j.s.a.GitUserCollectorControllerTest   : Starting GitUserCollectorControllerTest on przodownik-All-Series with PID 18360 (started by przodownik in /home/przodownik/blog/TDDInPractice)
+2018-02-01 06:58:18.454  INFO 18360 --- [Test worker] p.j.s.a.GitUserCollectorControllerTest   : The following profiles are active: test
+2018-02-01 06:58:18.473  INFO 18377 --- [Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2a5271dc: startup date [Thu Feb 01 06:58:18 CET 2018]; root of context hierarchy
+2018-02-01 06:58:18.996  INFO 18352 --- [Test worker] p.j.s.client.GitHubRestClientTest        : Starting GitHubRestClientTest on przodownik-All-Series with PID 18352 (started by przodownik in /home/przodownik/blog/TDDInPractice)
+2018-02-01 06:58:18.998  INFO 18352 --- [Test worker] p.j.s.client.GitHubRestClientTest        : The following profiles are active: test
+2018-02-01 06:58:19.882  INFO 18377 --- [Test worker] p.j.s.dto.RepoInfoJsonSerializerTest     : Started RepoInfoJsonSerializerTest in 1.972 seconds (JVM running for 3.295)
+2018-02-01 06:58:20.002  INFO 18352 --- [Test worker] p.j.s.client.GitHubRestClientTest        : Started GitHubRestClientTest in 1.676 seconds (JVM running for 3.426)
+2018-02-01 06:58:20.031  INFO 18352 --- [Test worker] w.org.eclipse.jetty.server.Server        : jetty-9.2.z-SNAPSHOT
+2018-02-01 06:58:20.057  INFO 18352 --- [Test worker] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@6cee898d{/__admin,null,AVAILABLE}
+2018-02-01 06:58:20.060  INFO 18352 --- [Test worker] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@3e08ca8b{/,null,AVAILABLE}
+2018-02-01 06:58:20.071  INFO 18352 --- [Test worker] w.o.e.j.s.NetworkTrafficServerConnector  : Started NetworkTrafficServerConnector@7ad919f5{HTTP/1.1}{0.0.0.0:9998}
+2018-02-01 06:58:20.074  INFO 18352 --- [Test worker] w.org.eclipse.jetty.server.Server        : Started @3498ms
+2018-02-01 06:58:20.261  INFO 18377 --- [Thread-5] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@2a5271dc: startup date [Thu Feb 01 06:58:18 CET 2018]; root of context hierarchy
+2018-02-01 06:58:20.533  INFO 18352 --- [qtp394513062-21] /__admin                                 : RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+2018-02-01 06:58:20.666  INFO 18352 --- [Test worker] w.o.e.j.s.NetworkTrafficServerConnector  : Stopped NetworkTrafficServerConnector@7ad919f5{HTTP/1.1}{0.0.0.0:9998}
+2018-02-01 06:58:20.667  INFO 18352 --- [Test worker] w.o.e.j.server.handler.ContextHandler    : Stopped w.o.e.j.s.ServletContextHandler@3e08ca8b{/,null,UNAVAILABLE}
+2018-02-01 06:58:20.667  INFO 18352 --- [Test worker] w.o.e.j.server.handler.ContextHandler    : Stopped w.o.e.j.s.ServletContextHandler@6cee898d{/__admin,null,UNAVAILABLE}
+2018-02-01 06:58:20.668  WARN 18352 --- [Test worker] w.o.e.j.util.thread.QueuedThreadPool     : qtp394513062{STOPPING,8<=8<=10,i=2,q=4} Couldn't stop Thread[qtp394513062-17,5,]
+2018-02-01 06:58:20.668  WARN 18352 --- [Test worker] w.o.e.j.util.thread.QueuedThreadPool     : qtp394513062{STOPPING,8<=8<=10,i=0,q=4} Couldn't stop Thread[qtp394513062-22,5,]
+2018-02-01 06:58:20.971  INFO 18360 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring FrameworkServlet ''
+2018-02-01 06:58:20.971  INFO 18360 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2018-02-01 06:58:20.980  INFO 18360 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 8 ms
+2018-02-01 06:58:21.029  INFO 18360 --- [Test worker] p.j.s.a.GitUserCollectorControllerTest   : Started GitUserCollectorControllerTest in 3.133 seconds (JVM running for 4.447)
+2018-02-01 14:43:24.577  INFO 7937 --- [main] j.s.GitUserInfoCollectorApplicationTests : Starting GitUserInfoCollectorApplicationTests on przodownik-All-Series with PID 7937 (started by przodownik in /home/przodownik/blog/TDDInPractice)
+2018-02-01 14:43:24.578  INFO 7937 --- [main] j.s.GitUserInfoCollectorApplicationTests : The following profiles are active: dev
+2018-02-01 14:43:26.161  INFO 7937 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$8844ff0e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:43:26.185  INFO 7937 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$7cb8c3b2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:43:26.205  INFO 7937 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBinderBuilder$ConversionServiceFactory' of type [org.springframework.boot.context.properties.ConfigurationPropertiesBinderBuilder$ConversionServiceFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:43:26.233  INFO 7937 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:43:26.245  INFO 7937 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheManagerCustomizers' of type [org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:43:26.248  INFO 7937 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration' of type [org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration$$EnhancerBySpringCGLIB$$1e543693] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:43:26.259  INFO 7937 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheManager' of type [org.springframework.cache.concurrent.ConcurrentMapCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:43:26.259  INFO 7937 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheAutoConfigurationValidator' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:43:26.289  INFO 7937 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'management.metrics-org.springframework.boot.actuate.autoconfigure.metrics.MetricsProperties' of type [org.springframework.boot.actuate.autoconfigure.metrics.MetricsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:43:26.293  INFO 7937 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.actuate.autoconfigure.metrics.MeterBindersConfiguration' of type [org.springframework.boot.actuate.autoconfigure.metrics.MeterBindersConfiguration$$EnhancerBySpringCGLIB$$5e8594f5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:43:26.307  INFO 7937 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jvmGcMetrics' of type [io.micrometer.core.instrument.binder.jvm.JvmGcMetrics] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:43:26.309  INFO 7937 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jvmMemoryMetrics' of type [io.micrometer.core.instrument.binder.jvm.JvmMemoryMetrics] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:43:26.311  INFO 7937 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jvmThreadMetrics' of type [io.micrometer.core.instrument.binder.jvm.JvmThreadMetrics] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:43:26.314  INFO 7937 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'logbackMetrics' of type [io.micrometer.core.instrument.binder.logging.LogbackMetrics] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:43:26.316  INFO 7937 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'uptimeMetrics' of type [io.micrometer.core.instrument.binder.system.UptimeMetrics] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:43:26.320  INFO 7937 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'processorMetrics' of type [io.micrometer.core.instrument.binder.system.ProcessorMetrics] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:43:26.325  INFO 7937 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.actuate.autoconfigure.metrics.web.client.RestTemplateMetricsConfiguration' of type [org.springframework.boot.actuate.autoconfigure.metrics.web.client.RestTemplateMetricsConfiguration$$EnhancerBySpringCGLIB$$f4f28849] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:43:26.335  INFO 7937 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'metricsWebClientUriTagFilter' of type [io.micrometer.core.instrument.config.MeterFilter$8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:43:27.600  INFO 7937 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-02-01 14:43:27.601  INFO 7937 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-02-01 14:43:27.602  INFO 7937 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-01 14:43:27.762  INFO 7937 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-02-01 14:43:28.459  INFO 7937 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-02-01 14:43:28.462  INFO 7937 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-02-01 14:43:28.476  INFO 7937 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-02-01 14:43:28.494  INFO 7937 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-02-01 14:43:28.604  INFO 7937 --- [main] j.s.GitUserInfoCollectorApplicationTests : Started GitUserInfoCollectorApplicationTests in 4.352 seconds (JVM running for 5.225)
+2018-02-01 14:43:28.631 ERROR 7937 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4f704591] to prepare test instance [pl.java.scalatech.GitUserInfoCollectorApplicationTests@708f7386]
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'pl.java.scalatech.GitUserInfoCollectorApplicationTests': Unsatisfied dependency expressed through field 'restTemplate'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.boot.test.web.client.TestRestTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:586) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:400) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44) ~[spring-boot-test-autoconfigure-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:242) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206) [.cp/:na]
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.boot.test.web.client.TestRestTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1504) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:583) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	... 29 common frames omitted
+
+2018-02-01 14:43:28.642 ERROR 7937 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4f704591] to prepare test instance [pl.java.scalatech.GitUserInfoCollectorApplicationTests@472719df]
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'pl.java.scalatech.GitUserInfoCollectorApplicationTests': Unsatisfied dependency expressed through field 'restTemplate'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.boot.test.web.client.TestRestTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:586) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:400) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44) ~[spring-boot-test-autoconfigure-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:242) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206) [.cp/:na]
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.boot.test.web.client.TestRestTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1504) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:583) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	... 29 common frames omitted
+
+2018-02-01 14:43:28.649  INFO 7937 --- [Thread-1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-02-01 14:44:15.120  INFO 8184 --- [main] j.s.GitUserInfoCollectorApplicationTests : Starting GitUserInfoCollectorApplicationTests on przodownik-All-Series with PID 8184 (started by przodownik in /home/przodownik/blog/TDDInPractice)
+2018-02-01 14:44:15.121  INFO 8184 --- [main] j.s.GitUserInfoCollectorApplicationTests : The following profiles are active: dev
+2018-02-01 14:44:15.135  INFO 8184 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5f59185e: startup date [Thu Feb 01 14:44:15 CET 2018]; root of context hierarchy
+2018-02-01 14:44:16.309  INFO 8184 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$8c537d33] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:44:16.325  INFO 8184 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$80c741d7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:44:16.339  INFO 8184 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBinderBuilder$ConversionServiceFactory' of type [org.springframework.boot.context.properties.ConfigurationPropertiesBinderBuilder$ConversionServiceFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:44:16.357  INFO 8184 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:44:16.365  INFO 8184 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheManagerCustomizers' of type [org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:44:16.367  INFO 8184 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration' of type [org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration$$EnhancerBySpringCGLIB$$2262b4b8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:44:16.375  INFO 8184 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheManager' of type [org.springframework.cache.concurrent.ConcurrentMapCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:44:16.376  INFO 8184 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheAutoConfigurationValidator' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:44:16.396  INFO 8184 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'management.metrics-org.springframework.boot.actuate.autoconfigure.metrics.MetricsProperties' of type [org.springframework.boot.actuate.autoconfigure.metrics.MetricsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:44:16.399  INFO 8184 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.actuate.autoconfigure.metrics.MeterBindersConfiguration' of type [org.springframework.boot.actuate.autoconfigure.metrics.MeterBindersConfiguration$$EnhancerBySpringCGLIB$$6294131a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:44:16.410  INFO 8184 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jvmGcMetrics' of type [io.micrometer.core.instrument.binder.jvm.JvmGcMetrics] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:44:16.412  INFO 8184 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jvmMemoryMetrics' of type [io.micrometer.core.instrument.binder.jvm.JvmMemoryMetrics] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:44:16.414  INFO 8184 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jvmThreadMetrics' of type [io.micrometer.core.instrument.binder.jvm.JvmThreadMetrics] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:44:16.417  INFO 8184 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'logbackMetrics' of type [io.micrometer.core.instrument.binder.logging.LogbackMetrics] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:44:16.419  INFO 8184 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'uptimeMetrics' of type [io.micrometer.core.instrument.binder.system.UptimeMetrics] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:44:16.421  INFO 8184 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'processorMetrics' of type [io.micrometer.core.instrument.binder.system.ProcessorMetrics] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:44:16.424  INFO 8184 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.actuate.autoconfigure.metrics.web.client.RestTemplateMetricsConfiguration' of type [org.springframework.boot.actuate.autoconfigure.metrics.web.client.RestTemplateMetricsConfiguration$$EnhancerBySpringCGLIB$$f901066e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:44:16.432  INFO 8184 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'metricsWebClientUriTagFilter' of type [io.micrometer.core.instrument.config.MeterFilter$8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:44:16.640  INFO 8184 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2018-02-01 14:44:16.649  INFO 8184 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-01 14:44:16.649  INFO 8184 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-01 14:44:16.660  INFO 8184 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+2018-02-01 14:44:16.754  INFO 8184 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-01 14:44:17.596  INFO 8184 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-01 14:44:17.596  INFO 8184 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-01 14:44:17.597  INFO 8184 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-01 14:44:17.597  INFO 8184 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-01 14:44:17.597  INFO 8184 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'shallowEtagHeaderFilter' to urls: [/repositories/*]
+2018-02-01 14:44:17.597  INFO 8184 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2018-02-01 14:44:17.597  INFO 8184 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-02-01 14:44:17.597  INFO 8184 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-02-01 14:44:17.599  INFO 8184 --- [localhost-startStop-1] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/jolokia' to jolokia-actuator-endpoint
+2018-02-01 14:44:18.000  INFO 8184 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-02-01 14:44:18.001  INFO 8184 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-02-01 14:44:18.001  INFO 8184 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-01 14:44:18.155  INFO 8184 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-02-01 14:44:18.686  INFO 8184 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-02-01 14:44:18.686  INFO 8184 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-02-01 14:44:18.700  INFO 8184 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-02-01 14:44:18.719  INFO 8184 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-02-01 14:44:18.852  INFO 8184 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 32779 (http) with context path ''
+2018-02-01 14:44:18.857  INFO 8184 --- [main] j.s.GitUserInfoCollectorApplicationTests : Started GitUserInfoCollectorApplicationTests in 4.051 seconds (JVM running for 4.634)
+2018-02-01 14:44:19.000  INFO 8184 --- [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-01 14:44:19.828  INFO 8184 --- [Thread-4] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5f59185e: startup date [Thu Feb 01 14:44:15 CET 2018]; root of context hierarchy
+2018-02-01 14:44:19.830  INFO 8184 --- [Thread-4] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-02-01 14:44:33.439  INFO 8270 --- [main] j.s.GitUserInfoCollectorApplicationTests : Starting GitUserInfoCollectorApplicationTests on przodownik-All-Series with PID 8270 (started by przodownik in /home/przodownik/blog/TDDInPractice)
+2018-02-01 14:44:33.439  INFO 8270 --- [main] j.s.GitUserInfoCollectorApplicationTests : The following profiles are active: dev
+2018-02-01 14:44:33.456  INFO 8270 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1255b1d1: startup date [Thu Feb 01 14:44:33 CET 2018]; root of context hierarchy
+2018-02-01 14:44:34.689  INFO 8270 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$f1f6b9a6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:44:34.705  INFO 8270 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$e66a7e4a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:44:34.721  INFO 8270 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBinderBuilder$ConversionServiceFactory' of type [org.springframework.boot.context.properties.ConfigurationPropertiesBinderBuilder$ConversionServiceFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:44:34.740  INFO 8270 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:44:34.748  INFO 8270 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheManagerCustomizers' of type [org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:44:34.750  INFO 8270 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration' of type [org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration$$EnhancerBySpringCGLIB$$8805f12b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:44:34.759  INFO 8270 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheManager' of type [org.springframework.cache.concurrent.ConcurrentMapCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:44:34.759  INFO 8270 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheAutoConfigurationValidator' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:44:34.781  INFO 8270 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'management.metrics-org.springframework.boot.actuate.autoconfigure.metrics.MetricsProperties' of type [org.springframework.boot.actuate.autoconfigure.metrics.MetricsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:44:34.786  INFO 8270 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.actuate.autoconfigure.metrics.MeterBindersConfiguration' of type [org.springframework.boot.actuate.autoconfigure.metrics.MeterBindersConfiguration$$EnhancerBySpringCGLIB$$c8374f8d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:44:34.801  INFO 8270 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jvmGcMetrics' of type [io.micrometer.core.instrument.binder.jvm.JvmGcMetrics] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:44:34.803  INFO 8270 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jvmMemoryMetrics' of type [io.micrometer.core.instrument.binder.jvm.JvmMemoryMetrics] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:44:34.806  INFO 8270 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jvmThreadMetrics' of type [io.micrometer.core.instrument.binder.jvm.JvmThreadMetrics] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:44:34.811  INFO 8270 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'logbackMetrics' of type [io.micrometer.core.instrument.binder.logging.LogbackMetrics] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:44:34.814  INFO 8270 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'uptimeMetrics' of type [io.micrometer.core.instrument.binder.system.UptimeMetrics] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:44:34.819  INFO 8270 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'processorMetrics' of type [io.micrometer.core.instrument.binder.system.ProcessorMetrics] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:44:34.824  INFO 8270 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.actuate.autoconfigure.metrics.web.client.RestTemplateMetricsConfiguration' of type [org.springframework.boot.actuate.autoconfigure.metrics.web.client.RestTemplateMetricsConfiguration$$EnhancerBySpringCGLIB$$5ea442e1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:44:34.837  INFO 8270 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'metricsWebClientUriTagFilter' of type [io.micrometer.core.instrument.config.MeterFilter$8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-01 14:44:35.104  INFO 8270 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2018-02-01 14:44:35.114  INFO 8270 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-02-01 14:44:35.115  INFO 8270 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-01 14:44:35.128  INFO 8270 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+2018-02-01 14:44:35.202  INFO 8270 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-02-01 14:44:36.248  INFO 8270 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-01 14:44:36.248  INFO 8270 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-01 14:44:36.248  INFO 8270 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-01 14:44:36.249  INFO 8270 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-01 14:44:36.249  INFO 8270 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'shallowEtagHeaderFilter' to urls: [/repositories/*]
+2018-02-01 14:44:36.249  INFO 8270 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2018-02-01 14:44:36.249  INFO 8270 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-02-01 14:44:36.249  INFO 8270 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-02-01 14:44:36.250  INFO 8270 --- [localhost-startStop-1] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/jolokia' to jolokia-actuator-endpoint
+2018-02-01 14:44:36.661  INFO 8270 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-02-01 14:44:36.661  INFO 8270 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-02-01 14:44:36.662  INFO 8270 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-01 14:44:36.833  INFO 8270 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-02-01 14:44:37.500  INFO 8270 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-02-01 14:44:37.500  INFO 8270 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-02-01 14:44:37.519  INFO 8270 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-02-01 14:44:37.544  INFO 8270 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-02-01 14:44:37.696  INFO 8270 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 43587 (http) with context path ''
+2018-02-01 14:44:37.701  INFO 8270 --- [main] j.s.GitUserInfoCollectorApplicationTests : Started GitUserInfoCollectorApplicationTests in 4.599 seconds (JVM running for 5.208)
+2018-02-01 14:44:37.866  INFO 8270 --- [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-01 14:44:38.693  INFO 8270 --- [Thread-4] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1255b1d1: startup date [Thu Feb 01 14:44:33 CET 2018]; root of context hierarchy
+2018-02-01 14:44:38.697  INFO 8270 --- [Thread-4] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-02-01 15:12:18.518  INFO 11379 --- [main] p.j.scalatech.client.GitHubClientTest    : Starting GitHubClientTest on przodownik-All-Series with PID 11379 (started by przodownik in /home/przodownik/blog/TDDInPractice)
+2018-02-01 15:12:18.519  INFO 11379 --- [main] p.j.scalatech.client.GitHubClientTest    : The following profiles are active: dev
+2018-02-01 15:12:18.533  INFO 11379 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5cc69cfe: startup date [Thu Feb 01 15:12:18 CET 2018]; root of context hierarchy
+2018-02-01 15:12:19.258  INFO 11379 --- [main] p.j.scalatech.client.GitHubClientTest    : Started GitHubClientTest in 1.032 seconds (JVM running for 1.71)
+2018-02-01 15:12:19.272 ERROR 11379 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@73eb439a] to prepare test instance [pl.java.scalatech.client.GitHubClientTest@aba625]
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'pl.java.scalatech.client.GitHubClientTest': Unsatisfied dependency expressed through field 'client'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'pl.java.scalatech.client.GitHubRestClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:586) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:400) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44) ~[spring-boot-test-autoconfigure-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:242) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206) [.cp/:na]
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'pl.java.scalatech.client.GitHubRestClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1504) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:583) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	... 29 common frames omitted
+
+2018-02-01 15:12:19.280  INFO 11379 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@5cc69cfe: startup date [Thu Feb 01 15:12:18 CET 2018]; root of context hierarchy
+2018-02-01 15:19:30.835  INFO 12094 --- [main] p.j.scalatech.client.GitHubClientTest    : Starting GitHubClientTest on przodownik-All-Series with PID 12094 (started by przodownik in /home/przodownik/blog/TDDInPractice)
+2018-02-01 15:19:30.836  INFO 12094 --- [main] p.j.scalatech.client.GitHubClientTest    : The following profiles are active: dev
+2018-02-01 15:19:31.610  INFO 12094 --- [main] p.j.scalatech.client.GitHubClientTest    : Started GitHubClientTest in 1.079 seconds (JVM running for 1.809)
+2018-02-01 15:28:32.524  INFO 12837 --- [main] p.j.scalatech.client.GitHubClientTest    : Starting GitHubClientTest on przodownik-All-Series with PID 12837 (started by przodownik in /home/przodownik/blog/TDDInPractice)
+2018-02-01 15:28:32.525  INFO 12837 --- [main] p.j.scalatech.client.GitHubClientTest    : The following profiles are active: dev
+2018-02-01 15:28:33.174  INFO 12837 --- [main] p.j.scalatech.client.GitHubClientTest    : Started GitHubClientTest in 0.97 seconds (JVM running for 1.606)
+2018-02-01 15:29:21.826  INFO 12953 --- [main] p.j.scalatech.client.GitHubClientTest    : Starting GitHubClientTest on przodownik-All-Series with PID 12953 (started by przodownik in /home/przodownik/blog/TDDInPractice)
+2018-02-01 15:29:21.827  INFO 12953 --- [main] p.j.scalatech.client.GitHubClientTest    : The following profiles are active: dev
+2018-02-01 15:29:21.836  INFO 12953 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6e16b8b5: startup date [Thu Feb 01 15:29:21 CET 2018]; root of context hierarchy
+2018-02-01 15:29:22.227  WARN 12953 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
+2018-02-01 15:29:22.232  INFO 12953 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-02-01 15:29:22.238 ERROR 12953 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:153) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:138) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:388) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:138) [spring-boot-test-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:107) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44) [spring-boot-test-autoconfigure-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:242) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206) [.cp/:na]
+Caused by: org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:202) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:176) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:150) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
+	... 34 common frames omitted
+
+2018-02-01 15:29:22.284  INFO 12953 --- [main] p.j.scalatech.client.GitHubClientTest    : Starting GitHubClientTest on przodownik-All-Series with PID 12953 (started by przodownik in /home/przodownik/blog/TDDInPractice)
+2018-02-01 15:29:22.284  INFO 12953 --- [main] p.j.scalatech.client.GitHubClientTest    : The following profiles are active: dev
+2018-02-01 15:29:22.286  INFO 12953 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2715644a: startup date [Thu Feb 01 15:29:22 CET 2018]; root of context hierarchy
+2018-02-01 15:29:22.392  WARN 12953 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
+2018-02-01 15:29:22.393  INFO 12953 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-02-01 15:29:22.394 ERROR 12953 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:153) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:138) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:388) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:138) [spring-boot-test-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:107) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.outputConditionEvaluationReport(SpringBootDependencyInjectionTestExecutionListener.java:54) [spring-boot-test-autoconfigure-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:47) [spring-boot-test-autoconfigure-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:242) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206) [.cp/:na]
+Caused by: org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:202) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:176) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:150) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
+	... 33 common frames omitted
+
+2018-02-01 15:29:22.395 ERROR 12953 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3b5fad2d] to prepare test instance [pl.java.scalatech.client.GitHubClientTest@62833051]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:107) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44) ~[spring-boot-test-autoconfigure-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:242) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206) [.cp/:na]
+Caused by: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:153) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:138) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:388) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:138) ~[spring-boot-test-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	... 26 common frames omitted
+Caused by: org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:202) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:176) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:150) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
+	... 34 common frames omitted
+
+2018-02-01 15:29:48.679  INFO 13027 --- [main] p.j.scalatech.client.GitHubClientTest    : Starting GitHubClientTest on przodownik-All-Series with PID 13027 (started by przodownik in /home/przodownik/blog/TDDInPractice)
+2018-02-01 15:29:48.680  INFO 13027 --- [main] p.j.scalatech.client.GitHubClientTest    : The following profiles are active: dev
+2018-02-01 15:29:49.334  INFO 13027 --- [main] p.j.scalatech.client.GitHubClientTest    : Started GitHubClientTest in 0.976 seconds (JVM running for 1.622)
+2018-02-01 15:31:12.516  INFO 13287 --- [main] p.j.scalatech.client.GitHubClientTest    : Starting GitHubClientTest on przodownik-All-Series with PID 13287 (started by przodownik in /home/przodownik/blog/TDDInPractice)
+2018-02-01 15:31:12.516  INFO 13287 --- [main] p.j.scalatech.client.GitHubClientTest    : The following profiles are active: dev
+2018-02-01 15:31:13.200  INFO 13287 --- [main] p.j.scalatech.client.GitHubClientTest    : Started GitHubClientTest in 0.981 seconds (JVM running for 1.643)
+2018-02-01 15:31:13.232 ERROR 13287 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@53251a66] to prepare test instance [pl.java.scalatech.client.GitHubClientTest@5496c165]
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'pl.java.scalatech.client.GitHubClientTest': Unsatisfied dependency expressed through field 'objectUnderTest'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'pl.java.scalatech.client.GitHubRestClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:586) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:400) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44) ~[spring-boot-test-autoconfigure-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:242) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206) [.cp/:na]
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'pl.java.scalatech.client.GitHubRestClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1504) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:583) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	... 29 common frames omitted
+
+2018-02-01 15:32:09.488  INFO 13429 --- [main] p.j.scalatech.client.GitHubClientTest    : Starting GitHubClientTest on przodownik-All-Series with PID 13429 (started by przodownik in /home/przodownik/blog/TDDInPractice)
+2018-02-01 15:32:09.489  INFO 13429 --- [main] p.j.scalatech.client.GitHubClientTest    : The following profiles are active: dev
+2018-02-01 15:32:10.110  INFO 13429 --- [main] p.j.scalatech.client.GitHubClientTest    : Started GitHubClientTest in 0.926 seconds (JVM running for 1.551)
+2018-02-01 15:33:29.584  INFO 13693 --- [main] p.j.scalatech.client.GitHubClientTest    : Starting GitHubClientTest on przodownik-All-Series with PID 13693 (started by przodownik in /home/przodownik/blog/TDDInPractice)
+2018-02-01 15:33:29.585  INFO 13693 --- [main] p.j.scalatech.client.GitHubClientTest    : The following profiles are active: dev
+2018-02-01 15:33:29.988  WARN 13693 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'gitHubRestClient' defined in pl.java.scalatech.client.GitHubClientTest$Config: Unsatisfied dependency expressed through method 'gitHubRestClient' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.web.client.RestTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2018-02-01 15:33:29.991  INFO 13693 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-02-01 15:33:30.011 ERROR 13693 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method gitHubRestClient in pl.java.scalatech.client.GitHubClientTest$Config required a bean of type 'org.springframework.web.client.RestTemplate' that could not be found.
+	- Bean method 'restTemplate' not loaded because @ConditionalOnProperty (spring.test.webclient.register-rest-template) found different value in property 'register-rest-template'
+
+
+Action:
+
+Consider revisiting the conditions above or defining a bean of type 'org.springframework.web.client.RestTemplate' in your configuration.
+
+2018-02-01 15:33:30.016 ERROR 13693 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@3b5fad2d] to prepare test instance [pl.java.scalatech.client.GitHubClientTest@3ed0918d]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:107) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:242) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206) [.cp/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'gitHubRestClient' defined in pl.java.scalatech.client.GitHubClientTest$Config: Unsatisfied dependency expressed through method 'gitHubRestClient' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.web.client.RestTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:729) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:470) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1250) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1099) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:758) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868) ~[spring-context-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:388) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:138) ~[spring-boot-test-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.web.client.RestTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1504) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:815) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:721) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	... 43 common frames omitted
+
+2018-02-01 15:34:04.731  INFO 13789 --- [main] p.j.scalatech.client.GitHubClientTest    : Starting GitHubClientTest on przodownik-All-Series with PID 13789 (started by przodownik in /home/przodownik/blog/TDDInPractice)
+2018-02-01 15:34:04.732  INFO 13789 --- [main] p.j.scalatech.client.GitHubClientTest    : The following profiles are active: dev
+2018-02-01 15:34:05.575  INFO 13789 --- [main] p.j.scalatech.client.GitHubClientTest    : Started GitHubClientTest in 1.159 seconds (JVM running for 1.795)
+2018-02-01 15:35:04.013  INFO 13933 --- [main] p.j.scalatech.client.GitHubClientTest    : Starting GitHubClientTest on przodownik-All-Series with PID 13933 (started by przodownik in /home/przodownik/blog/TDDInPractice)
+2018-02-01 15:35:04.014  INFO 13933 --- [main] p.j.scalatech.client.GitHubClientTest    : The following profiles are active: dev
+2018-02-01 15:35:04.739  INFO 13933 --- [main] p.j.scalatech.client.GitHubClientTest    : Started GitHubClientTest in 1.084 seconds (JVM running for 1.669)
+2018-02-01 15:35:29.769  INFO 14013 --- [main] p.j.scalatech.client.GitHubClientTest    : Starting GitHubClientTest on przodownik-All-Series with PID 14013 (started by przodownik in /home/przodownik/blog/TDDInPractice)
+2018-02-01 15:35:29.770  INFO 14013 --- [main] p.j.scalatech.client.GitHubClientTest    : The following profiles are active: dev
+2018-02-01 15:35:30.459  INFO 14013 --- [main] p.j.scalatech.client.GitHubClientTest    : Started GitHubClientTest in 0.993 seconds (JVM running for 1.599)
+2018-02-01 15:35:40.930  INFO 14087 --- [main] p.j.scalatech.client.GitHubClientTest    : Starting GitHubClientTest on przodownik-All-Series with PID 14087 (started by przodownik in /home/przodownik/blog/TDDInPractice)
+2018-02-01 15:35:40.931  INFO 14087 --- [main] p.j.scalatech.client.GitHubClientTest    : The following profiles are active: dev
+2018-02-01 15:35:41.594  INFO 14087 --- [main] p.j.scalatech.client.GitHubClientTest    : Started GitHubClientTest in 0.976 seconds (JVM running for 1.61)
+2018-02-01 15:35:56.688  INFO 14190 --- [main] p.j.scalatech.client.GitHubClientTest    : Starting GitHubClientTest on przodownik-All-Series with PID 14190 (started by przodownik in /home/przodownik/blog/TDDInPractice)
+2018-02-01 15:35:56.689  INFO 14190 --- [main] p.j.scalatech.client.GitHubClientTest    : The following profiles are active: dev
+2018-02-01 15:35:57.134  WARN 14190 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'gitHubRestClient' defined in pl.java.scalatech.client.GitHubClientTest$Config: Unsatisfied dependency expressed through method 'gitHubRestClient' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.web.client.RestTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2018-02-01 15:35:57.136  INFO 14190 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-02-01 15:35:57.153 ERROR 14190 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method gitHubRestClient in pl.java.scalatech.client.GitHubClientTest$Config required a bean of type 'org.springframework.web.client.RestTemplate' that could not be found.
+	- Bean method 'restTemplate' not loaded because @ConditionalOnProperty (spring.test.webclient.register-rest-template) found different value in property 'register-rest-template'
+
+
+Action:
+
+Consider revisiting the conditions above or defining a bean of type 'org.springframework.web.client.RestTemplate' in your configuration.
+
+2018-02-01 15:35:57.157 ERROR 14190 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@75c56eb9] to prepare test instance [pl.java.scalatech.client.GitHubClientTest@54f66455]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:107) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:242) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206) [.cp/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'gitHubRestClient' defined in pl.java.scalatech.client.GitHubClientTest$Config: Unsatisfied dependency expressed through method 'gitHubRestClient' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.web.client.RestTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:729) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:470) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1250) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1099) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:758) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868) ~[spring-context-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:388) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:138) ~[spring-boot-test-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.web.client.RestTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1504) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:815) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:721) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	... 43 common frames omitted
+
+2018-02-01 15:36:34.259  INFO 14282 --- [main] p.j.scalatech.client.GitHubClientTest    : Starting GitHubClientTest on przodownik-All-Series with PID 14282 (started by przodownik in /home/przodownik/blog/TDDInPractice)
+2018-02-01 15:36:34.260  INFO 14282 --- [main] p.j.scalatech.client.GitHubClientTest    : The following profiles are active: dev
+2018-02-01 15:36:34.691  WARN 14282 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'gitHubRestClient' defined in pl.java.scalatech.client.GitHubClientTest$Config: Unsatisfied dependency expressed through method 'gitHubRestClient' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.web.client.RestTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2018-02-01 15:36:34.693  INFO 14282 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-02-01 15:36:34.712 ERROR 14282 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method gitHubRestClient in pl.java.scalatech.client.GitHubClientTest$Config required a bean of type 'org.springframework.web.client.RestTemplate' that could not be found.
+	- Bean method 'restTemplate' not loaded because @ConditionalOnProperty (spring.test.webclient.register-rest-template) found different value in property 'register-rest-template'
+
+
+Action:
+
+Consider revisiting the conditions above or defining a bean of type 'org.springframework.web.client.RestTemplate' in your configuration.
+
+2018-02-01 15:36:34.717 ERROR 14282 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@75c56eb9] to prepare test instance [pl.java.scalatech.client.GitHubClientTest@588cd519]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:107) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:242) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206) [.cp/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'gitHubRestClient' defined in pl.java.scalatech.client.GitHubClientTest$Config: Unsatisfied dependency expressed through method 'gitHubRestClient' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.web.client.RestTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:729) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:470) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1250) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1099) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:758) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868) ~[spring-context-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:388) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:138) ~[spring-boot-test-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.web.client.RestTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1504) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:815) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:721) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	... 43 common frames omitted
+
+2018-02-01 15:37:08.684  INFO 14368 --- [main] p.j.scalatech.client.GitHubClientTest    : Starting GitHubClientTest on przodownik-All-Series with PID 14368 (started by przodownik in /home/przodownik/blog/TDDInPractice)
+2018-02-01 15:37:08.684  INFO 14368 --- [main] p.j.scalatech.client.GitHubClientTest    : The following profiles are active: dev
+2018-02-01 15:37:09.310  INFO 14368 --- [main] p.j.scalatech.client.GitHubClientTest    : Started GitHubClientTest in 0.951 seconds (JVM running for 1.604)
+2018-02-01 15:37:28.924  INFO 14453 --- [main] p.j.scalatech.client.GitHubClientTest    : Starting GitHubClientTest on przodownik-All-Series with PID 14453 (started by przodownik in /home/przodownik/blog/TDDInPractice)
+2018-02-01 15:37:28.925  INFO 14453 --- [main] p.j.scalatech.client.GitHubClientTest    : The following profiles are active: dev
+2018-02-01 15:37:29.548  INFO 14453 --- [main] p.j.scalatech.client.GitHubClientTest    : Started GitHubClientTest in 0.919 seconds (JVM running for 1.573)
+2018-02-01 15:37:29.569 ERROR 14453 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@53251a66] to prepare test instance [pl.java.scalatech.client.GitHubClientTest@61d34b4]
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'pl.java.scalatech.client.GitHubClientTest': Unsatisfied dependency expressed through field 'objectUnderTest'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'pl.java.scalatech.client.GitHubRestClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:586) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:400) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44) ~[spring-boot-test-autoconfigure-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:242) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206) [.cp/:na]
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'pl.java.scalatech.client.GitHubRestClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1504) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:583) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	... 29 common frames omitted
+
+2018-02-01 15:38:31.116  INFO 14598 --- [main] p.j.scalatech.client.GitHubClientTest    : Starting GitHubClientTest on przodownik-All-Series with PID 14598 (started by przodownik in /home/przodownik/blog/TDDInPractice)
+2018-02-01 15:38:31.116  INFO 14598 --- [main] p.j.scalatech.client.GitHubClientTest    : The following profiles are active: dev
+2018-02-01 15:38:31.864  INFO 14598 --- [main] p.j.scalatech.client.GitHubClientTest    : Started GitHubClientTest in 1.095 seconds (JVM running for 1.774)
+2018-02-01 15:38:31.882 ERROR 14598 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@53251a66] to prepare test instance [pl.java.scalatech.client.GitHubClientTest@148c7c4b]
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'pl.java.scalatech.client.GitHubClientTest': Unsatisfied dependency expressed through field 'objectUnderTest'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'pl.java.scalatech.client.GitHubRestClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:586) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:400) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44) ~[spring-boot-test-autoconfigure-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:242) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206) [.cp/:na]
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'pl.java.scalatech.client.GitHubRestClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1504) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:583) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	... 29 common frames omitted
+
+2018-02-01 15:39:31.756  INFO 14741 --- [main] p.j.scalatech.client.GitHubClientTest    : Starting GitHubClientTest on przodownik-All-Series with PID 14741 (started by przodownik in /home/przodownik/blog/TDDInPractice)
+2018-02-01 15:39:31.756  INFO 14741 --- [main] p.j.scalatech.client.GitHubClientTest    : The following profiles are active: dev
+2018-02-01 15:39:32.917  INFO 14741 --- [main] p.j.scalatech.client.GitHubClientTest    : Started GitHubClientTest in 1.468 seconds (JVM running for 2.093)
+2018-02-01 15:40:27.992  INFO 14865 --- [main] p.j.scalatech.client.GitHubClientTest    : Starting GitHubClientTest on przodownik-All-Series with PID 14865 (started by przodownik in /home/przodownik/blog/TDDInPractice)
+2018-02-01 15:40:27.993  INFO 14865 --- [main] p.j.scalatech.client.GitHubClientTest    : The following profiles are active: dev
+2018-02-01 15:40:28.006  INFO 14865 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6e46d9f4: startup date [Thu Feb 01 15:40:28 CET 2018]; root of context hierarchy
+2018-02-01 15:40:28.626  INFO 14865 --- [main] p.j.scalatech.client.GitHubClientTest    : Started GitHubClientTest in 0.931 seconds (JVM running for 1.555)
+2018-02-01 15:40:28.781  INFO 14865 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@6e46d9f4: startup date [Thu Feb 01 15:40:28 CET 2018]; root of context hierarchy
+2018-02-01 15:43:18.375  INFO 15261 --- [main] p.j.scalatech.client.GitHubClientTest    : Starting GitHubClientTest on przodownik-All-Series with PID 15261 (started by przodownik in /home/przodownik/blog/TDDInPractice)
+2018-02-01 15:43:18.376  INFO 15261 --- [main] p.j.scalatech.client.GitHubClientTest    : The following profiles are active: dev
+2018-02-01 15:43:19.114  INFO 15261 --- [main] p.j.scalatech.client.GitHubClientTest    : Started GitHubClientTest in 1.051 seconds (JVM running for 1.745)
+2018-02-01 15:47:11.773  INFO 15605 --- [main] p.j.scalatech.client.GitHubClientTest    : Starting GitHubClientTest on przodownik-All-Series with PID 15605 (started by przodownik in /home/przodownik/blog/TDDInPractice)
+2018-02-01 15:47:11.774  INFO 15605 --- [main] p.j.scalatech.client.GitHubClientTest    : The following profiles are active: dev
+2018-02-01 15:47:11.785  INFO 15605 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@644c78d4: startup date [Thu Feb 01 15:47:11 CET 2018]; root of context hierarchy
+2018-02-01 15:47:12.514  INFO 15605 --- [main] p.j.scalatech.client.GitHubClientTest    : Started GitHubClientTest in 1.031 seconds (JVM running for 1.735)
+2018-02-01 15:47:12.666  INFO 15605 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@644c78d4: startup date [Thu Feb 01 15:47:11 CET 2018]; root of context hierarchy
+2018-02-01 15:48:03.852  INFO 15734 --- [main] p.j.scalatech.client.GitHubClientTest    : Starting GitHubClientTest on przodownik-All-Series with PID 15734 (started by przodownik in /home/przodownik/blog/TDDInPractice)
+2018-02-01 15:48:03.853  INFO 15734 --- [main] p.j.scalatech.client.GitHubClientTest    : The following profiles are active: dev
+2018-02-01 15:48:03.864  INFO 15734 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@523424b5: startup date [Thu Feb 01 15:48:03 CET 2018]; root of context hierarchy
+2018-02-01 15:48:04.508  INFO 15734 --- [main] p.j.scalatech.client.GitHubClientTest    : Started GitHubClientTest in 0.952 seconds (JVM running for 1.656)
+2018-02-01 15:48:04.667  INFO 15734 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@523424b5: startup date [Thu Feb 01 15:48:03 CET 2018]; root of context hierarchy
+2018-02-01 15:48:13.720  INFO 15790 --- [main] p.j.scalatech.client.GitHubClientTest    : Starting GitHubClientTest on przodownik-All-Series with PID 15790 (started by przodownik in /home/przodownik/blog/TDDInPractice)
+2018-02-01 15:48:13.720  INFO 15790 --- [main] p.j.scalatech.client.GitHubClientTest    : The following profiles are active: dev
+2018-02-01 15:48:13.733  INFO 15790 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@523424b5: startup date [Thu Feb 01 15:48:13 CET 2018]; root of context hierarchy
+2018-02-01 15:48:14.411  INFO 15790 --- [main] p.j.scalatech.client.GitHubClientTest    : Started GitHubClientTest in 0.999 seconds (JVM running for 1.694)
+2018-02-01 15:48:14.588  INFO 15790 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@523424b5: startup date [Thu Feb 01 15:48:13 CET 2018]; root of context hierarchy
+2018-02-01 15:49:34.512  INFO 16022 --- [main] p.j.scalatech.client.GitHubClientTest    : Starting GitHubClientTest on przodownik-All-Series with PID 16022 (started by przodownik in /home/przodownik/blog/TDDInPractice)
+2018-02-01 15:49:34.512  INFO 16022 --- [main] p.j.scalatech.client.GitHubClientTest    : The following profiles are active: dev
+2018-02-01 15:49:34.528  INFO 16022 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@a7e2d9d: startup date [Thu Feb 01 15:49:34 CET 2018]; root of context hierarchy
+2018-02-01 15:49:35.314  INFO 16022 --- [main] p.j.scalatech.client.GitHubClientTest    : Started GitHubClientTest in 1.067 seconds (JVM running for 1.744)
+2018-02-01 15:49:35.433  INFO 16022 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@a7e2d9d: startup date [Thu Feb 01 15:49:34 CET 2018]; root of context hierarchy
+2018-02-01 15:55:52.369  INFO 16744 --- [main] p.j.scalatech.client.GitHubClientTest    : Starting GitHubClientTest on przodownik-All-Series with PID 16744 (started by przodownik in /home/przodownik/blog/TDDInPractice)
+2018-02-01 15:55:52.369  INFO 16744 --- [main] p.j.scalatech.client.GitHubClientTest    : The following profiles are active: dev
+2018-02-01 15:55:52.380  INFO 16744 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@532a02d9: startup date [Thu Feb 01 15:55:52 CET 2018]; root of context hierarchy
+2018-02-01 15:55:53.347  INFO 16744 --- [main] p.j.scalatech.client.GitHubClientTest    : Started GitHubClientTest in 1.295 seconds (JVM running for 1.95)
+2018-02-01 15:55:53.457  INFO 16744 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@532a02d9: startup date [Thu Feb 01 15:55:52 CET 2018]; root of context hierarchy
+2018-02-01 15:56:28.139  INFO 16860 --- [main] p.j.scalatech.client.GitHubClientTest    : Starting GitHubClientTest on przodownik-All-Series with PID 16860 (started by przodownik in /home/przodownik/blog/TDDInPractice)
+2018-02-01 15:56:28.140  INFO 16860 --- [main] p.j.scalatech.client.GitHubClientTest    : The following profiles are active: dev
+2018-02-01 15:56:28.154  INFO 16860 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4089713: startup date [Thu Feb 01 15:56:28 CET 2018]; root of context hierarchy
+2018-02-01 15:56:28.421  INFO 16860 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'gitHubRestClient' with a different definition: replacing [Generic bean: class [pl.java.scalatech.client.GitHubRestClient]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [/home/przodownik/blog/TDDInPractice/bin/pl/java/scalatech/client/GitHubRestClient.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=true; factoryBeanName=gitHubClientTest.Config; factoryMethodName=gitHubRestClient; initMethodName=null; destroyMethodName=(inferred); defined in pl.java.scalatech.client.GitHubClientTest$Config]
+2018-02-01 15:56:29.019  INFO 16860 --- [main] p.j.scalatech.client.GitHubClientTest    : Started GitHubClientTest in 1.165 seconds (JVM running for 1.857)
+2018-02-01 15:56:29.145  INFO 16860 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@4089713: startup date [Thu Feb 01 15:56:28 CET 2018]; root of context hierarchy
+2018-02-01 18:10:17.471  INFO 11128 --- [main] p.j.s.api.GlobalErrorHandlingTest        : Starting GlobalErrorHandlingTest on przodownik-All-Series with PID 11128 (started by przodownik in /home/przodownik/blog/TDDInPractice)
+2018-02-01 18:10:17.473  INFO 11128 --- [main] p.j.s.api.GlobalErrorHandlingTest        : The following profiles are active: dev
+2018-02-01 18:10:18.522  WARN 11128 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'gitUserCollectorController' defined in file [/home/przodownik/blog/TDDInPractice/bin/pl/java/scalatech/api/GitUserCollectorController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'pl.java.scalatech.service.GitHubService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2018-02-01 18:10:18.526  INFO 11128 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-02-01 18:10:18.555 ERROR 11128 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in pl.java.scalatech.api.GitUserCollectorController required a bean of type 'pl.java.scalatech.service.GitHubService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'pl.java.scalatech.service.GitHubService' in your configuration.
+
+2018-02-01 18:10:18.596  INFO 11128 --- [main] p.j.s.api.GlobalErrorHandlingTest        : Starting GlobalErrorHandlingTest on przodownik-All-Series with PID 11128 (started by przodownik in /home/przodownik/blog/TDDInPractice)
+2018-02-01 18:10:18.596  INFO 11128 --- [main] p.j.s.api.GlobalErrorHandlingTest        : The following profiles are active: dev
+2018-02-01 18:10:18.921  WARN 11128 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'gitUserCollectorController' defined in file [/home/przodownik/blog/TDDInPractice/bin/pl/java/scalatech/api/GitUserCollectorController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'pl.java.scalatech.service.GitHubService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2018-02-01 18:10:18.922  INFO 11128 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-02-01 18:10:18.940 ERROR 11128 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in pl.java.scalatech.api.GitUserCollectorController required a bean of type 'pl.java.scalatech.service.GitHubService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'pl.java.scalatech.service.GitHubService' in your configuration.
+
+2018-02-01 18:10:18.945 ERROR 11128 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@47caedad] to prepare test instance [pl.java.scalatech.api.GlobalErrorHandlingTest@24105dc5]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:107) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44) ~[spring-boot-test-autoconfigure-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:242) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206) [.cp/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'gitUserCollectorController' defined in file [/home/przodownik/blog/TDDInPractice/bin/pl/java/scalatech/api/GitUserCollectorController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'pl.java.scalatech.service.GitHubService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:729) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:192) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1270) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:758) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868) ~[spring-context-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:388) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:138) ~[spring-boot-test-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	... 26 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'pl.java.scalatech.service.GitHubService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1504) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:815) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:721) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	... 44 common frames omitted
+
+2018-02-01 18:11:05.049  INFO 11255 --- [main] p.j.s.api.GlobalErrorHandlingTest        : Starting GlobalErrorHandlingTest on przodownik-All-Series with PID 11255 (started by przodownik in /home/przodownik/blog/TDDInPractice)
+2018-02-01 18:11:05.049  INFO 11255 --- [main] p.j.s.api.GlobalErrorHandlingTest        : The following profiles are active: dev
+2018-02-01 18:11:06.074  WARN 11255 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'gitUserCollectorController' defined in file [/home/przodownik/blog/TDDInPractice/bin/pl/java/scalatech/api/GitUserCollectorController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'pl.java.scalatech.service.GitHubService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2018-02-01 18:11:06.078  INFO 11255 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-02-01 18:11:06.107 ERROR 11255 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in pl.java.scalatech.api.GitUserCollectorController required a bean of type 'pl.java.scalatech.service.GitHubService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'pl.java.scalatech.service.GitHubService' in your configuration.
+
+2018-02-01 18:11:06.153  INFO 11255 --- [main] p.j.s.api.GlobalErrorHandlingTest        : Starting GlobalErrorHandlingTest on przodownik-All-Series with PID 11255 (started by przodownik in /home/przodownik/blog/TDDInPractice)
+2018-02-01 18:11:06.153  INFO 11255 --- [main] p.j.s.api.GlobalErrorHandlingTest        : The following profiles are active: dev
+2018-02-01 18:11:06.458  WARN 11255 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'gitUserCollectorController' defined in file [/home/przodownik/blog/TDDInPractice/bin/pl/java/scalatech/api/GitUserCollectorController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'pl.java.scalatech.service.GitHubService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2018-02-01 18:11:06.460  INFO 11255 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-02-01 18:11:06.480 ERROR 11255 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in pl.java.scalatech.api.GitUserCollectorController required a bean of type 'pl.java.scalatech.service.GitHubService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'pl.java.scalatech.service.GitHubService' in your configuration.
+
+2018-02-01 18:11:06.485 ERROR 11255 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7139992f] to prepare test instance [pl.java.scalatech.api.GlobalErrorHandlingTest@5167f57d]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:107) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44) ~[spring-boot-test-autoconfigure-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:242) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206) [.cp/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'gitUserCollectorController' defined in file [/home/przodownik/blog/TDDInPractice/bin/pl/java/scalatech/api/GitUserCollectorController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'pl.java.scalatech.service.GitHubService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:729) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:192) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1270) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:758) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868) ~[spring-context-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:388) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) ~[spring-boot-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:138) ~[spring-boot-test-2.0.0.RC1.jar:2.0.0.RC1]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	... 26 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'pl.java.scalatech.service.GitHubService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1504) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:815) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:721) ~[spring-beans-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	... 44 common frames omitted
+

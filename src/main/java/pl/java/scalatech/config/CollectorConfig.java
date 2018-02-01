@@ -10,7 +10,7 @@ import pl.java.scalatech.service.GitHubService;
 
 @Configuration
 @EnableCaching
-class CollectorConfig {
+public class CollectorConfig {
 
     @Bean
     GitHubService gitHubService(GitHubRestClient gitHubRestClient) {

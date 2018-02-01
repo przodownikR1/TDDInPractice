@@ -18,7 +18,7 @@ import static org.springframework.http.HttpStatus.UNPROCESSABLE_ENTITY;
 
 @ControllerAdvice
 @Slf4j
-class ApiValidationExceptionHandler extends ResponseEntityExceptionHandler {
+public class ApiValidationExceptionHandler extends ResponseEntityExceptionHandler {
     @Override
     protected ResponseEntity<Object> handleMethodArgumentNotValid(
             MethodArgumentNotValidException ex,
