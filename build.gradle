@@ -26,6 +26,8 @@ apply plugin: 'docker'
 apply from: "gradle/boot.gradle"
 apply from: "gradle/integrationTest.gradle"
 apply from: "gradle/test.gradle"
+apply from: "gradle/coverage.gradle"
+apply from: "gradle/check.gradle"
 
 group = 'pl.java.scalatech'
 version = '0.0.1-SNAPSHOT'

@@ -3,6 +3,7 @@ spring:
     active:
     - dev
   cache:
+        type: none
         cache-names: repoInfo
         caffeine:
             spec: maximumSize=500, expireAfterAccess=60s
@@ -60,4 +61,3 @@ management:
     health:
       show-details: true
       enabled: true
-  

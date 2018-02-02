@@ -1,0 +1,281 @@
+= TDD Exercise :)
+
+
+
+== ab test with cache enable
+
+ab -k -c 20 -n 400  http://localhost:9999/repositories/przodownikR1/-vava_11
+
+----
+Benchmarking localhost (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Finished 400 requests
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            9999
+
+Document Path:          /repositories/przodownikR1/-vava_11
+Document Length:        177 bytes
+
+Concurrency Level:      20
+Time taken for tests:   0.197 seconds
+Complete requests:      400
+Failed requests:        0
+Keep-Alive requests:    400
+Total transferred:      146000 bytes
+HTML transferred:       70800 bytes
+Requests per second:    2025.46 [#/sec] (mean)
+Time per request:       9.874 [ms] (mean)
+Time per request:       0.494 [ms] (mean, across all concurrent requests)
+Transfer rate:          721.97 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       0
+Processing:     1   10   7.1      9      36
+Waiting:        0   10   7.2      9      36
+Total:          1   10   7.1      9      36
+
+Percentage of the requests served within a certain time (ms)
+  50%      9
+  66%     12
+  75%     14
+  80%     16
+  90%     20
+  95%     24
+  98%     26
+  99%     29
+ 100%     36 (longest request)
+----
+
+
+== ab test without cache
+----
+Benchmarking localhost (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Finished 400 requests
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            9999
+
+Document Path:          /repositories/przodownikR1/-vava_11
+Document Length:        177 bytes
+
+Concurrency Level:      20
+Time taken for tests:   5.258 seconds
+Complete requests:      400
+Failed requests:        342
+   (Connect: 0, Receive: 0, Length: 342, Exceptions: 0)
+Non-2xx responses:      342
+Keep-Alive requests:    58
+Total transferred:      74864 bytes
+HTML transferred:       18474 bytes
+Requests per second:    76.08 [#/sec] (mean)
+Time per request:       262.879 [ms] (mean)
+Time per request:       13.144 [ms] (mean, across all concurrent requests)
+Transfer rate:          13.91 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       1
+Processing:   136  240 318.0    162    3804
+Waiting:      136  240 318.0    161    3804
+Total:        136  240 318.0    162    3805
+
+Percentage of the requests served within a certain time (ms)
+  50%    162
+  66%    176
+  75%    190
+  80%    197
+  90%    245
+  95%    964
+  98%   1700
+  99%   1730
+ 100%   3805 (longest request)
+----
+
+== Test ab short description
+
+----
+-c: ("Concurrency"). Indicates how many clients (people/users) will be hitting the site at the same time. While ab runs, there will be -c clients hitting the site. This is what actually decides the amount of stress your site will suffer during the benchmark.
+
+-n: Indicates how many requests are going to be made. This just decides the length of the benchmark. A high -n value with a -c value that your server can support is a good idea to ensure that things don't break under sustained stress: it's not the same to support stress for 5 seconds than for 5 hours.
+
+-k: This does the "KeepAlive" funcionality browsers do by nature. You don't need to pass a value for -k as it it "boolean" (meaning: it indicates that you desire for your test to use the Keep Alive header from HTTP and sustain the connection). Since browsers do this and you're likely to want to simulate the stress and flow that your site will have from browsers, it is recommended you do a benchmark with this.
+----
+
+
+
+== Launch
+
+gradle bootrun 
+
+* default port 9999
+
+
+== Docker
+
+== Docker compose
+
+== Tests
+
+=== Unit test
+
+gradle test
+
+=== Integration test
+
+gradle integTest
+
+=== Smoke test
+
+=== E2E test
+
+* wiremock / standalone 
+
+* @TestRestTemplate
+
+* CDC approach
+
+=== Performance Test
+
+* Jmeter / gradle plugin / jenkins flow
+
+== Configuration
+
+outside config directory ./config
+
+== Jenkins pipeline
+
+*  docker compose
+
+== Nexus
+
+ *  docker compose
+ * docker image repository 
+ * artefacts repository
+
+== Problems
+
+=== X-RATELIMITER
+
+* some simple workaround pseudo-code
+
+----
+response = request.get(url)
+if response.status equals 429:
+    alert('Rate limited. Waiting to retry…')
+    wait(response.retry-after)
+    retry(url)
+----
+
+* using spring retry
+
+== Solutions
+
+* loadbalancer
+
+** whatever :)
+
+* gateway
+
+** ribbon (Spring cloud) -> client loadbalancer
+
+* dynamic IP
+
+** X-RATELimiter workaround
+
+WARNING: bootleneck :)
+
+* Rest client pool 
+
+** PoolingHttpClientConnectionManager
+
+** HttpComponentsClientHttpRequestFactory
+
+** Apache HttpClient httpClient
+
+* ETag 
+
+** **ShallowEtagHeaderFilter**
+
+saves on bandwidth using **If-None-Match** Http header
+ETag’s md5 hash value is calculated for every request ->  doesn’t save on server performance
+
+* Cache 
+
+** simple cache introduce (coffeine - old gauva cache)
+
+** cache on @service 
+
+* Rest rateLimiter
+
+** optimize code to eliminate unnecessary API calls
+
+** cache frequently used data (@Cacheable)
+
+** Github ( use client ID and secret -> higher pointer of ratelimiter than unauthenticated calls ) -> OAuth2
+
+----
+curl -H "Authorization: token OAUTH-TOKEN" https://api.github.com
+curl https://api.github.com/?access_token=OAUTH-TOKEN
+curl 'https://api.github.com/users/whatever?client_id=xxxx&client_secret=yyyy'
+----
+
+
+== Production ready 
+
+* 12 cloud factors
+* external config and logger
+* dockering
+* introduce CD 
+* healthchecks
+* actuator
+* ELK (logback setting)
+**  docker compose
+* Metrics (Graphite/Grafana || Logger   ) (dropwizard dependecies)
+**   docker compose
+
+== Code quality 
+
+* Sonar (gradle plugin)
+**include and aggregate below plugins
+** docker compose
+* jacoco (gradle plugin) 
+* coverage
+* findbug (gradle plugin)
+* pmd (gradle plugin)
+* pitest (gradle plugin)
+** tests checker
+
+== Maintanance & Develop
+
+* Swagger UI
+ ** activate by dev profile
+ 
+* Postman
+
+* curl 
+ 
+* jvisualvm
+
+* metrics -> as above
+
+* centralized log -> as above
+
+* modularity 
+
+** separate github client as another dependency
+
+* TDD
+
+* CDC

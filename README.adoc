@@ -1,2 +1,8 @@
+
 # TDDInPractice
 sample TDD approach (spring boot)
+
+include::docs/exercices.adoc[]
+
+
+

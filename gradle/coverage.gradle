@@ -1,0 +1,16 @@
+apply plugin: "application"
+apply plugin: "jacoco"
+
+jacoco {
+    toolVersion = "0.7.9"
+    reportsDir = file("$buildDir/coverageReport")
+}
+
+jacocoTestReport {
+    group = "Reporting"
+    reports {
+        xml.enabled true
+        csv.enabled false
+        html.destination "${buildDir}/reports/coverage"
+    }
+}
