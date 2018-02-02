@@ -26,3 +26,4 @@ nbdist/
 
 
 gitUserCollector.log
+application.pid
