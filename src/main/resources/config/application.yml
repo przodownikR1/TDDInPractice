@@ -3,7 +3,6 @@ spring:
     active:
     - dev
   cache:
-        type: none
         cache-names: repoInfo
         caffeine:
             spec: maximumSize=500, expireAfterAccess=60s
@@ -26,8 +25,8 @@ rest-client:
   connTimeout: 15000
   readTimeout: 15000
   connWaitTimeout: 15000
-  user: przodownikR1
-  personalToken: '****'
+  #user: przodownikR1
+  #personalToken: ***secret github token
 management:
   metrics:
     web:

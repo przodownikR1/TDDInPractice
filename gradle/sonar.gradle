@@ -17,5 +17,6 @@ sonarqube {
 			property "sonar.projectKey", "org.sonarqube:tddInPractice"
 			property "sonar.login","8bf3c004d8533a0b4ff3a753ddef92822cb5f710"
 			property "sonar.host.url","http://localhost:9000"
+			property "sonar.exclusions",["**/*DTO.java","**/*Config.java","**/*Setting.java","**/*Application.java","**/dto/**","**/config/**","**/Profiles.java"]
 		}
 	}

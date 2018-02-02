@@ -1,5 +1,6 @@
 package pl.java.scalatech.config;
 
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
@@ -8,7 +9,7 @@ import pl.java.scalatech.client.GitHubRestClient;
 import pl.java.scalatech.service.GitHubService;
 
 @Configuration
-//@EnableCaching
+@EnableCaching
 public class CollectorConfig {
 
     @Bean
@@ -20,5 +21,6 @@ public class CollectorConfig {
     GitHubRestClient gitHubRestClient(RestTemplate restTemplate) {
         return new GitHubRestClient(restTemplate);
     }
+
 
 }

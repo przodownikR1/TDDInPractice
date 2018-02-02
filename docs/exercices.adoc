@@ -322,14 +322,27 @@ x-ratelimit-reset →1517537258
 == Code quality 
 
 * Sonar (gradle plugin)
-**include and aggregate below plugins
+** include and aggregate below plugins
+***  where 8bf3c004d8533a0b4ff3a753ddef92822cb5f710 - sonar generate token
+
+----
+./gradlew sonarqube \
+  -Dsonar.host.url=http://localhost:9000 \
+  -Dsonar.login=8bf3c004d8533a0b4ff3a753ddef92822cb5f710
+----
+
 ** docker compose
-* jacoco (gradle plugin) 
-* coverage
-* findbug (gradle plugin)
-* pmd (gradle plugin)
-* pitest (gradle plugin)
+** jacoco (gradle plugin) 
+*** gradle test integTest jacocoTestReport
+** coverage
+** findbug (gradle plugin)
+*** 'findbugsIntegrationTest', 'findbugsMain', 'findbugsTest'
+** pmd (gradle plugin)
+*** 'pmdIntegrationTest', 'pmdMain', 'pmdTest'
+** pitest (gradle plugin)
 ** tests checker
+** integration test
+*** gradle integTest - run only from CI or CD env
 
 == Maintanance & Develop
 
