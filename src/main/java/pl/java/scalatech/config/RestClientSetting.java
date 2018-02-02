@@ -31,4 +31,8 @@ public class RestClientSetting {
 
     @NotNull
     private int connWaitTimeout;
+    //TODO validator to pair user and personalToken
+    private String user;
+
+    private String personalToken;
 }

@@ -26,6 +26,8 @@ rest-client:
   connTimeout: 15000
   readTimeout: 15000
   connWaitTimeout: 15000
+  user: przodownikR1
+  personalToken: '****'
 management:
   metrics:
     web:

@@ -103,6 +103,56 @@ Percentage of the requests served within a certain time (ms)
  100%   3805 (longest request)
 ----
 
+== ab test without cache but auth enable
+
+----
+Benchmarking localhost (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Finished 400 requests
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            9999
+
+Document Path:          /repositories/przodownikR1/-vava_11
+Document Length:        177 bytes
+
+Concurrency Level:      20
+Time taken for tests:   3.848 seconds
+Complete requests:      400
+Failed requests:        0
+Keep-Alive requests:    400
+Total transferred:      146000 bytes
+HTML transferred:       70800 bytes
+Requests per second:    103.96 [#/sec] (mean)
+Time per request:       192.386 [ms] (mean)
+Time per request:       9.619 [ms] (mean, across all concurrent requests)
+Transfer rate:          37.06 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       1
+Processing:   165  188  28.7    184     534
+Waiting:      165  188  28.7    184     534
+Total:        165  188  28.7    184     534
+
+Percentage of the requests served within a certain time (ms)
+  50%    184
+  66%    187
+  75%    191
+  80%    192
+  90%    200
+  95%    211
+  98%    240
+  99%    318
+ 100%    534 (longest request)
+
+----
+
 == Test ab short description
 
 ----
@@ -121,6 +171,12 @@ gradle bootrun
 
 * default port 9999
 
+* Driven by **rest-client.user** - activate auth connection
+
+----
+rest-client.user=.... 
+rest-client.personalToken=....
+----
 
 == Docker
 
@@ -225,13 +281,31 @@ ETag’s md5 hash value is calculated for every request ->  doesn’t save on se
 
 ** Github ( use client ID and secret -> higher pointer of ratelimiter than unauthenticated calls ) -> OAuth2
 
+
 ----
 curl -H "Authorization: token OAUTH-TOKEN" https://api.github.com
 curl https://api.github.com/?access_token=OAUTH-TOKEN
 curl 'https://api.github.com/users/whatever?client_id=xxxx&client_secret=yyyy'
 ----
 
+WARNING: bottleneck main problem!  
 
+** with user:token -> basic auth headers print
+
+----
+x-ratelimit-limit →5000
+x-ratelimit-remaining →4997
+x-ratelimit-reset →1517537504
+----
+
+** without auth headers print
+
+----
+x-ratelimit-limit →60
+x-ratelimit-remaining →56
+x-ratelimit-reset →1517537258
+----
+    
 == Production ready 
 
 * 12 cloud factors

@@ -15,6 +15,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Primary;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.client.MockRestServiceServer;
+import org.springframework.web.client.RestTemplate;
 
 import java.util.Optional;
 
@@ -66,9 +67,15 @@ public class GitHubClientTest {
     static class Config {
         
         @Bean
+        @Primary
         public RestTemplateBuilder provideBuilder() {
           customizer = new MockServerRestTemplateCustomizer();
           return new RestTemplateBuilder(customizer);
+        }
+        @Bean
+        @Primary
+        RestTemplate restTemplate() {
+            return provideBuilder().build();
         }
         
         @Bean

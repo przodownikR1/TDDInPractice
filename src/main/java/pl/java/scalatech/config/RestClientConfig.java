@@ -1,6 +1,7 @@
 package pl.java.scalatech.config;
 
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.HttpRequestRetryHandler;
@@ -8,11 +9,14 @@ import org.apache.http.conn.HttpClientConnectionManager;
 import org.apache.http.impl.client.DefaultHttpRequestRetryHandler;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.impl.conn.PoolingHttpClientConnectionManager;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 import org.springframework.http.client.ClientHttpRequestFactory;
 import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
+import org.springframework.http.client.support.BasicAuthorizationInterceptor;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.filter.ShallowEtagHeaderFilter;
 
@@ -20,6 +24,7 @@ import javax.servlet.Filter;
 
 @Configuration
 @RequiredArgsConstructor
+@Slf4j
 public class RestClientConfig {
 
     private final RestClientSetting restClientSetting;
@@ -71,7 +76,21 @@ public class RestClientConfig {
     }
 
     @Bean
+    @Primary
+    @ConditionalOnProperty(name = "rest-client.user", matchIfMissing = false)
+    RestTemplate restTemplateAuthBasic(ClientHttpRequestFactory factory) {
+        log.info("RestTemplate with basicAuth enable....");
+        RestTemplate restTemplate = new RestTemplate(factory);
+        restTemplate.getInterceptors().add(new BasicAuthorizationInterceptor(restClientSetting.getUser(), restClientSetting.getPersonalToken()));
+        return restTemplate;
+    }
+
+    @Bean
+    @ConditionalOnProperty(name = "rest-client.user", matchIfMissing = true)
     RestTemplate restTemplate(ClientHttpRequestFactory factory) {
-        return new RestTemplate(factory);
+        log.info("restTemplate without auth enable....");
+        RestTemplate restTemplate = new RestTemplate(factory);
+        restTemplate.getInterceptors().add(new BasicAuthorizationInterceptor(restClientSetting.getUser(), restClientSetting.getPersonalToken()));
+        return restTemplate;
     }
 }
