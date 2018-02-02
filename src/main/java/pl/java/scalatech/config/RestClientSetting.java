@@ -12,6 +12,7 @@ import javax.validation.constraints.NotNull;
 @ConfigurationProperties(prefix = "rest-client")
 @Data
 @Validated
+@AuthRestValid
 public class RestClientSetting {
 
     @NotNull
@@ -31,7 +32,7 @@ public class RestClientSetting {
 
     @NotNull
     private int connWaitTimeout;
-    //TODO validator to pair user and personalToken
+
     private String user;
 
     private String personalToken;

@@ -51,7 +51,7 @@ public class GitHubClientSimpleTest {
         //when
         Optional<RepoInfo> clientResult = objectUnderTest.findRepoByName("przodownikR1", repoName);
         //then
-        assertThat(clientResult.isPresent());
+        assertThat(clientResult.isPresent()).isTrue();
         assertThat(clientResult.get()).isEqualTo(expectedAnswer);
         verify(restTemplate).getForEntity(urlArg.capture(),Mockito.eq(RepoInfo.class),paramsArg.capture());
         assertThat(urlArg.getValue()).isEqualTo(url); 

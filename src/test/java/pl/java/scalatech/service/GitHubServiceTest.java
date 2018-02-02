@@ -47,7 +47,7 @@ public class GitHubServiceTest {
         // when
         Optional<RepoInfo> repoInfo = objectUnderTest.getRepoInfo(owner, repoName);
         // then
-        assertThat(repoInfo.isPresent());
+        assertThat(repoInfo.isPresent()).isTrue();
         assertThat(repoInfo.get()).isEqualTo(expectedAnswer);
         verify(restClient).findRepoByName(ownerVar.capture(), repoVar.capture());
         assertThat(ownerVar.getValue()).isEqualTo(owner);

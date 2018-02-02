@@ -14,6 +14,7 @@ buildscript {
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
 		classpath("se.transmode.gradle:gradle-docker:${dockerPluginVersion}")
 		classpath "gradle.plugin.com.gorylenko.gradle-git-properties:gradle-git-properties:1.4.17"
+		classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.5"
 		
 	}
 }
@@ -28,6 +29,7 @@ apply from: "gradle/integrationTest.gradle"
 apply from: "gradle/test.gradle"
 apply from: "gradle/coverage.gradle"
 apply from: "gradle/check.gradle"
+apply from: "gradle/sonar.gradle"
 
 group = 'pl.java.scalatech'
 version = '0.0.1-SNAPSHOT'
@@ -51,7 +53,7 @@ dependencies {
 	compile 'com.google.guava:guava:20.+'
 	compile group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jsr310', version: '2.9.4'
 	compileOnly('org.springframework.boot:spring-boot-configuration-processor')
-	compileOnly('org.projectlombok:lombok')
+	compile('org.projectlombok:lombok')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	testCompile 'com.github.tomakehurst:wiremock-standalone:2.14.0'
 	testCompile group: 'pl.pragmatists', name: 'JUnitParams', version: '1.1.1'

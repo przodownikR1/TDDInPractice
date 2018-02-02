@@ -57,7 +57,7 @@ public class GitHubClientTest {
         // when
         Optional<RepoInfo> info = this.objectUnderTest.findRepoByName(owner, repoName);
         // then
-        assertThat(info.isPresent());
+        assertThat(info.isPresent()).isTrue();
         assertThat(info.get()).isEqualTo(expectedAnswer);
         server.verify();
 

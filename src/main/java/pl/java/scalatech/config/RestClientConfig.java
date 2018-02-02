@@ -43,6 +43,7 @@ public class RestClientConfig {
         result.setOrder(1);
         return result;
     }
+    
 
     @Bean
     HttpClientConnectionManager httpClientConnectionManager() {
@@ -79,7 +80,7 @@ public class RestClientConfig {
     @Primary
     @ConditionalOnProperty(name = "rest-client.user", matchIfMissing = false)
     RestTemplate restTemplateAuthBasic(ClientHttpRequestFactory factory) {
-        log.info("RestTemplate with basicAuth enable....");
+        log.info("[AUTH] RestTemplate with basicAuth enable....");
         RestTemplate restTemplate = new RestTemplate(factory);
         restTemplate.getInterceptors().add(new BasicAuthorizationInterceptor(restClientSetting.getUser(), restClientSetting.getPersonalToken()));
         return restTemplate;
@@ -88,9 +89,9 @@ public class RestClientConfig {
     @Bean
     @ConditionalOnProperty(name = "rest-client.user", matchIfMissing = true)
     RestTemplate restTemplate(ClientHttpRequestFactory factory) {
-        log.info("restTemplate without auth enable....");
+        log.info("[NO AUTH] restTemplate without auth enable....");
         RestTemplate restTemplate = new RestTemplate(factory);
-        restTemplate.getInterceptors().add(new BasicAuthorizationInterceptor(restClientSetting.getUser(), restClientSetting.getPersonalToken()));
+        restTemplate.getInterceptors().clear();
         return restTemplate;
     }
 }
