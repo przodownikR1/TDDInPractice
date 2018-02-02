@@ -12,7 +12,6 @@ buildscript {
     }
 	dependencies {
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
-		classpath("se.transmode.gradle:gradle-docker:${dockerPluginVersion}")
 		classpath "gradle.plugin.com.gorylenko.gradle-git-properties:gradle-git-properties:1.4.17"
 		classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.5"
 		
@@ -23,7 +22,6 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
-apply plugin: 'docker'
 apply from: "gradle/boot.gradle"
 apply from: "gradle/integrationTest.gradle"
 apply from: "gradle/test.gradle"
@@ -33,7 +31,11 @@ apply from: "gradle/sonar.gradle"
 
 group = 'pl.java.scalatech'
 version = '0.0.1-SNAPSHOT'
+mainClassName = "pl.java.scalatech.GitUserInfoCollectorApplication"
 sourceCompatibility = 1.8
+archivesBaseName = 'gitInfo'
+compileJava.options.fork = true
+
 
 repositories {
     mavenCentral()
@@ -58,8 +60,6 @@ dependencies {
 	testCompile 'com.github.tomakehurst:wiremock-standalone:2.14.0'
 	testCompile group: 'pl.pragmatists', name: 'JUnitParams', version: '1.1.1'
 }
-compileJava.options.fork = true
-//compileJava.options.forkOptions.executable = /usr/lib/jvm/java-8-oracle/bin
 
 sourceSets {
         main { compileClasspath += configurations.compile }
@@ -79,30 +79,12 @@ task makeDirs(group: 'startup',  description: 'create dictionary infrastucture')
 }
 }
 
-task buildDocker(type: Docker, dependsOn: assemble) {
-    push = false
-    applicationName = jar.baseName
-    tagVersion=project.version
-    dockerfile = file('src/main/docker/Dockerfile')
-    doFirst {
-    copy {
-      from jar
-      from file('src/main/docker')
-      into stageDir
-    }
-  }
-
-}
 configurations.all {
     resolutionStrategy.eachDependency { DependencyResolveDetails details ->
         if (details.requested.group == 'org.springframework') {
             details.useVersion '5.0.2.RELEASE'
         }
     }
-}
-jar {
-    baseName = 'gitInfo-connector'
-    version = null
 }
 
 task wrapper(type: Wrapper) {

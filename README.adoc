@@ -4,5 +4,81 @@ sample TDD approach (spring boot)
 
 include::docs/exercices.adoc[]
 
+Launch : 
+
+1. ** gradle wrapper**
+2. **./gradlew clean build** 
+3.Go to main project directory (where is Dockerfile)
+4.execute command :  **docker build  -t gitinfo .** 
+5.For sure execute command:  **docker images**
+ 
+----
+gitinfo                                         latest              c4ea7f3c85c7        16 seconds ago      130MB
+---- 
+
+6.If you want use application with auth you have to generate github secret token
+7.you have to added two properties (or uncomment) to file **application.yml** inside **./config** folder :
+
+----
+#user: {github user name}
+#personalToken: {github user secretToken}
+----
+
+8.If you don't want to action as an authenticated user - just simple don't change anything - but be careful, it's potenial bottleneck
+9.execute command **docker-compose up**
+
+10.open port : 9999
+
+
+*example url*
+  
+----
+curl -X GET --header 'Accept: application/json' 'http://localhost:9999/repositories/przodownikR1/basicAuth'
+----
+
+----
+{
+  "full_name": "przodownikR1/basicAuth",
+  "description": null,
+  "clone_url": "https://github.com/przodownikR1/basicAuth.git",
+  "stargazers_count": 0,
+  "created_at": "2015-12-06T11:16:27"
+}
+----
+
+for dev profile available swagger console : **http://localhost:9999/swagger-ui.htm** 
+
+
+
+Enjoy :)  
+
+** Other launch option - without docker 
+
+*** edit application.yml as above
+*** **./gradlew bootrun**
+
+** Other launch option - use only jar
+*** go to folder build/libs and execute
+----
+java -jar {jar.name}
+----
+
+** Other option - copy jar from build/libs to root directory 
+*** edit ./config/application.yml in example above
+
+----
+#user: {github user name}
+#personalToken: {github user secretToken}
+----
+----
+java -jar {jar.name}
+----
+
+** Other option - pass user and token as env variable..
+
+Enjoy :)
+
+
+
 
 

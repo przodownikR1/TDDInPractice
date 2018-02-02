@@ -1,0 +1,22 @@
+version: '3.0'
+services:
+  git_info_retriever:
+    build: ./
+    container_name: gitinfo
+    ports:
+    - 9999:9999
+    networks:
+    - sample
+    volumes:
+    - ./config/application.yml:/data/application.yml:ro
+    environment:
+    - SPRING_PROFILES_ACTIVE=dev,checker
+    entrypoint:
+    - java
+    - -jar
+    - /data/gitInfo.jar
+    - --spring.config.location=/data/application.yml
+
+networks:
+  sample:
+    driver: bridge

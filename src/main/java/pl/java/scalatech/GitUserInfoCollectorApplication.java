@@ -7,22 +7,19 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.system.ApplicationPidFileWriter;
 import org.springframework.core.env.Environment;
 
-import java.net.InetAddress;
-import java.net.UnknownHostException;
-
 @SpringBootApplication
 @Slf4j
 public class GitUserInfoCollectorApplication {
 
-    
-    public static void main(String[] args) throws UnknownHostException {
+    public static void main(String[] args) {
         springPIDAppRun(args, GitUserInfoCollectorApplication.class);
     }
 
-    private static void springPIDAppRun(String[] args, Class<?> clazz) throws UnknownHostException {
+    private static void springPIDAppRun(String[] args, Class<?> clazz) {
         SpringApplication springApplication = new SpringApplication(clazz);
         springApplication.addListeners(new ApplicationPidFileWriter());
         Environment environment = springApplication.run(args).getEnvironment();
+
         log.info("\n----------------------------------------------------------\n" +
                 "\tApplication '{}' is running! Access URLs:\n" +
                 "\tLocal: \t\thttp://127.0.0.1:{}\n" +
@@ -30,8 +27,7 @@ public class GitUserInfoCollectorApplication {
                 "----------------------------------------------------------",
                 environment.getProperty("spring.application.name"),
                 environment.getProperty("server.port"),
-                InetAddress.getLocalHost().getHostAddress(),
-                environment.getProperty("server.port"),
                 environment.getActiveProfiles());
     }
+
 }
